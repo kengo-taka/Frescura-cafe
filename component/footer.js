@@ -24,14 +24,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/frescura_cafe_zacatecas/" ><InstagramIcon /></a>
         </div>
         </Grid>
-
       </Grid>
-
-
-
-
-
-
       <small align="center" className={styles.copyright}>© 2021 Frescura Cafe</small>
     </div>
    );

@@ -20,13 +20,13 @@ const Navbar = () => {
 
       {/* navbar for big screen */}
       <div className={styles.navbarRight}>
-      <a href="#home" className={styles.navItem}><h3>
+      <a href="/" className={styles.navItem}><h3>
           HOME</h3></a>
-        <a href="#about" className={styles.navItem}><h3>
+        <a href="/about" className={styles.navItem}><h3>
           ABOUT</h3></a>
-        <a href="#menu" className={styles.navItem}><h3>
+        <a href="/menu" className={styles.navItem}><h3>
           MENU</h3></a>
-        <a href="#contact" className={styles.navItem}><h3>
+        <a href="/contact" className={styles.navItem}><h3>
           CONTACT</h3></a>
       </div>
 
@@ -40,10 +40,10 @@ const Navbar = () => {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-           <MenuItem onClick={handleClose}><a href="#education">Home</a></MenuItem>
-          <MenuItem onClick={handleClose}><a href="#about">About</a></MenuItem>
-          <MenuItem onClick={handleClose}><a href="#products">Menu</a></MenuItem>
-          <MenuItem onClick={handleClose}><a href="#contact">Contact</a></MenuItem>
+           <MenuItem onClick={handleClose}><a href="/">Home</a></MenuItem>
+          <MenuItem onClick={handleClose}><a href="/about">About</a></MenuItem>
+          <MenuItem onClick={handleClose}><a href="/menu">Menu</a></MenuItem>
+          <MenuItem onClick={handleClose}><a href="/contact">Contact</a></MenuItem>
         </Menu>
       </div>
 
