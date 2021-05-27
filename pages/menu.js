@@ -1,5 +1,8 @@
 import styles from '../styles/Home.module.css'
 import Grid from '@material-ui/core/Grid'
+import Image from 'next/image'
+
+
 const Menu = () => {
   return (
     <div className={styles.con}>
@@ -94,7 +97,10 @@ const Menu = () => {
           <h4 className={styles.menuText3}>Deliciosa carne de res, jamón, queso americano, queso chihuahua y verdura</h4>
         </Grid>
         <Grid item xs={12} sm={12} md={6}>
-
+<div className={styles.mt10}></div>
+        <div align="center" >
+        <Image src='/beer.jpg' width={220} height={300} />
+      </div>
         </Grid>
       </Grid>
 
@@ -116,9 +122,12 @@ const Menu = () => {
 
         </Grid>
         <Grid item xs={12} sm={12} md={6}>
-
+          <div className={styles.mt10}></div>
+        <div align="center" >
+        <Image src='/coffee.jpg' width={250} height={370} />
+      </div>
         </Grid>
-      </Grid>
+      </Grid> 
 
 
       <h1 className={styles.menuText1}>PIZZAS</h1>

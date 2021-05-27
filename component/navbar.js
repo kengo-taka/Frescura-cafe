@@ -16,7 +16,7 @@ const Navbar = () => {
   return (  
     <div className={styles.navbar}>
 
-        <a href="#about"><h1 className={styles.fontFrescure}>Frescura-Cafe</h1></a>
+        <a href="#about"><h3 className={styles.fontFrescure}>Frescura-Cafe</h3></a>
 
       {/* navbar for big screen */}
       <div className={styles.navbarRight}>
