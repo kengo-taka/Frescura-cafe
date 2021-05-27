@@ -9,7 +9,13 @@
     margin-top: 20px;
     justify-content: flex-end;
   }
+
   .navbarRightSmall {
+    display: none;
+  }
+
+  /* front page grid */
+  .gridForSmall {
     display: none;
   }
 }
@@ -18,13 +24,22 @@
 .navbarRight {
   display: none;
 }
+
 .navbarRightSmall {
   margin-top: 28px;
   margin-right: 10px;
   margin-left: auto;
   }
+
+ 
 }
 
+@media screen and (min-width: 960px) {
+    /* front page grid */
+  .gridForSmall {
+    display: none;
+  }
+}
 @media screen and (max-width: 960px) {
 .navbarRight {
   display: none;
@@ -43,6 +58,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* front page grid */
+  .gridForBig {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -54,6 +74,11 @@
   margin-top: 28px;
   margin-right: 10px;
   margin-left: auto;
+  }
+
+  /* front page grid */
+  .gridForBig {
+    display: none;
   }
 }
   /* container'width */
@@ -92,20 +117,21 @@
 
 
 /* home page */
-.homeImage {
-  filter: brightness(80%);
-  z-index: 40;
-  top: 0;
-  left: 0;
+.topImage {
+  width: 100%;
 }
 
-.relative {
-  width: 100%; 
-  height: 1000px;
-  background-image: url('../public/coffeeHome.jpg');
-  background-size: cover;
-
+.homeText1 {
+  color: orange;
+  font-family: Rajdhani;
 }
+
+.homeText2 {
+  color: white;
+  font-family: Rajdhani;
+}
+
+
 
 
 /* contact */
@@ -114,6 +140,7 @@
   font-size: 100px;
   font-family: "Dancing Script";
 }
+
 
 /* about */
 .aboutTitle {
@@ -190,7 +217,7 @@ margin-left: 50px;
 .backGround {
   background-image: url('../public/wood2.jpg');
   background-size: contain;
-  z-index: 0;
+  
 }
 .mt1 {
   margin-top: 10px;
