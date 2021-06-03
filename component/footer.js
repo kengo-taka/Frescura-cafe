@@ -11,10 +11,10 @@ const Footer = () => {
           <div className={styles.footerL}>
             <div className={styles.mt5}></div>
          <h2>Frescura Cafe</h2>
-         <p>Adress : 98000, J. Jesús González Ortega 304, Sierra de Alica, Zacatecas, Zac.
+         <p>Ubicación: 98000, J. Jesús González Ortega 304, Sierra de Alica, Zacatecas, Zac.
          </p>
-         <p>Phone : +524922027288</p>
-         <p>Open Daily : 4am - 11pm</p>
+         <p>Contacto: +524922027288</p>
+         <p>Horarios: Lunes 4pm - 11pm, Martes - Domingo 9am - 11pm</p>
          </div>
         </Grid>
         <Grid item xs={12} sm={12} md={6} >

@@ -3,6 +3,7 @@ import React from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Image from 'next/image'
 
 const Navbar = () => {
   // for button menu
@@ -16,18 +17,21 @@ const Navbar = () => {
   return (  
     <div className={styles.navbar}>
 
-        <a href="#about"><h3 className={styles.fontFrescure}>Frescura-Cafe</h3></a>
-
+        <a href="/about" className={styles.logo}><Image src='/logo.png' width={150} height={80} /></a>
+       {/* <div className={styles.logo}>
+        <Image src='/logo.png' width={100} height={70} />
+        </div> */}
+  
       {/* navbar for big screen */}
       <div className={styles.navbarRight}>
       <a href="/" className={styles.navItem}><h3>
           HOME</h3></a>
         <a href="/about" className={styles.navItem}><h3>
-          ABOUT</h3></a>
+          SOBRE</h3></a>
         <a href="/menu" className={styles.navItem}><h3>
-          MENU</h3></a>
+          MENÚ</h3></a>
         <a href="/contact" className={styles.navItem}><h3>
-          CONTACT</h3></a>
+          CONTACTO</h3></a>
       </div>
 
       {/* navbar for small screen */}
@@ -41,9 +45,9 @@ const Navbar = () => {
           onClose={handleClose}
         >
            <MenuItem onClick={handleClose}><a href="/">Home</a></MenuItem>
-          <MenuItem onClick={handleClose}><a href="/about">About</a></MenuItem>
-          <MenuItem onClick={handleClose}><a href="/menu">Menu</a></MenuItem>
-          <MenuItem onClick={handleClose}><a href="/contact">Contact</a></MenuItem>
+          <MenuItem onClick={handleClose}><a href="/about">Sobre</a></MenuItem>
+          <MenuItem onClick={handleClose}><a href="/menu">Menú</a></MenuItem>
+          <MenuItem onClick={handleClose}><a href="/contact">Contacto</a></MenuItem>
         </Menu>
       </div>
 

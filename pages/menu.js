@@ -7,12 +7,12 @@ const Menu = () => {
   return (
     <div className={styles.con}>
       <h1 align="center" className={styles.menuTitle}>Menu</h1>
-
-
-
+      
+      <div align="center">
+      <Image src='/crape3.jpg' width={400} height={340} />
+      </div>
 
       <h1 className={styles.menuText1}>BEBIDAS</h1>
-
 
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
@@ -178,6 +178,18 @@ const Menu = () => {
           <p className={styles.menuText3}>Chica $149, Grande $219</p>
           <h4 className={styles.menuText3}>(camarones, aguacate y cebolla morada)</h4>
 
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} sm={12} md={6}>
+          <div align="center">
+        <Image src='/crape1.jpg' width={400} height={340} />
+        </div>
+        </Grid>
+        <Grid item xs={12} sm={12} md={6}>
+        <div align="center">
+        <Image src='/crape2.jpg' width={400} height={340} />
+        </div>
         </Grid>
       </Grid>
 
