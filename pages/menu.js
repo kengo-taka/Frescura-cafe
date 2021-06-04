@@ -6,13 +6,13 @@ import Image from 'next/image'
 const Menu = () => {
   return (
     <div className={styles.con}>
-      <h1 align="center" className={styles.menuTitle}>Menu</h1>
+      <h2 align="center" className={styles.menuTitle}>Menu</h2>
       
       <div align="center">
       <Image src='/crape3.jpg' width={400} height={340} />
       </div>
 
-      <h1 className={styles.menuText1}>BEBIDAS</h1>
+      <h2 className={styles.menuText1}>BEBIDAS</h2>
 
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
@@ -77,7 +77,7 @@ const Menu = () => {
       </Grid>
 
 
-      <h1 className={styles.menuText1}>HAMBURGUESAS</h1>
+      <h2 className={styles.menuText1}>HAMBURGUESAS</h2>
 
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
@@ -104,7 +104,7 @@ const Menu = () => {
         </Grid>
       </Grid>
 
-      <h1 className={styles.menuText1}>DESAYUNOS</h1>
+      <h2 className={styles.menuText1}>DESAYUNOS</h2>
 
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
@@ -130,7 +130,7 @@ const Menu = () => {
       </Grid> 
 
 
-      <h1 className={styles.menuText1}>PIZZAS</h1>
+      <h2 className={styles.menuText1}>PIZZAS</h2>
       <p className={styles.menuText3}>Chica: 30cm - Grande: 40cm</p>
 
       <Grid container>
@@ -180,20 +180,24 @@ const Menu = () => {
 
         </Grid>
       </Grid>
+
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
           <div align="center">
         <Image src='/crape1.jpg' width={400} height={340} />
         </div>
+        <div className={styles.mt5}></div>
         </Grid>
+
         <Grid item xs={12} sm={12} md={6}>
         <div align="center">
         <Image src='/crape2.jpg' width={400} height={340} />
         </div>
         </Grid>
+
       </Grid>
 
-      <h1 className={styles.menuText1}>CREPAS</h1>
+      <h2 className={styles.menuText1}>CREPAS</h2>
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
           <h2 className={styles.menuText2}>DULCES</h2>
