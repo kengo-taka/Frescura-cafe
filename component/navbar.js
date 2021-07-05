@@ -17,7 +17,7 @@ const Navbar = () => {
   return (  
     <div className={styles.navbar}>
 
-        <a href="/about" className={styles.logo}><Image src='/logo.png' width={150} height={80} /></a>
+        <a href="/" className={styles.logo}><Image src='/logo.png' width={150} height={80} /></a>
        {/* <div className={styles.logo}>
         <Image src='/logo.png' width={100} height={70} />
         </div> */}

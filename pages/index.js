@@ -37,10 +37,7 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Frescura Cafe</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-      </Head>
+     
       <div className={styles.parent}>
         <img src='coffeeHome.jpg' className={styles.topImage}></img>
         <div className={styles.animate}>
