@@ -1,11 +1,19 @@
 import styles from '/styles/Home.module.css';
-import React from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Image from 'next/image'
+import Aos from "aos";
+import "aos/dist/aos.css"
+import React, { useEffect } from 'react';
+
 
 const Navbar = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   // for button menu
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -17,7 +25,7 @@ const Navbar = () => {
   return (  
     <div className={styles.navbar}>
 
-        <a href="/" className={styles.logo}><Image src='/logo.png' width={150} height={80} /></a>
+        <a href="/" className={styles.logo}><Image src='/logo.png' width={150} height={80} data-aos="zoom-in"/></a>
        {/* <div className={styles.logo}>
         <Image src='/logo.png' width={100} height={70} />
         </div> */}

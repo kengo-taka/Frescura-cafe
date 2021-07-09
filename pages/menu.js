@@ -1,15 +1,23 @@
 import styles from '../styles/Home.module.css'
 import Grid from '@material-ui/core/Grid'
 import Image from 'next/image'
+import Aos from "aos";
+import "aos/dist/aos.css"
+import React, { useEffect } from 'react';
 
 
 const Menu = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className={styles.con}>
       <h2 align="center" className={styles.menuTitle}>Menu</h2>
       
       <div align="center">
-      <Image src='/crape3.jpg' width={400} height={340} />
+      <Image src='/crape3.jpg' width={400} height={340} data-aos="zoom-in"/>
       </div>
 
       <h2 className={styles.menuText1}>BEBIDAS</h2>
@@ -99,7 +107,7 @@ const Menu = () => {
         <Grid item xs={12} sm={12} md={6}>
 <div className={styles.mt10}></div>
         <div align="center" >
-        <Image src='/beer.jpg' width={220} height={300} />
+        <Image src='/beer.jpg' width={220} height={300} data-aos="zoom-in"/>
       </div>
         </Grid>
       </Grid>
@@ -124,7 +132,7 @@ const Menu = () => {
         <Grid item xs={12} sm={12} md={6}>
           <div className={styles.mt10}></div>
         <div align="center" >
-        <Image src='/coffee.jpg' width={250} height={370} />
+        <Image src='/coffee.jpg' width={250} height={370} data-aos="zoom-in"/>
       </div>
         </Grid>
       </Grid> 
@@ -184,14 +192,14 @@ const Menu = () => {
       <Grid container>
         <Grid item xs={12} sm={12} md={6}>
           <div align="center">
-        <Image src='/crape1.jpg' width={400} height={340} />
+        <Image src='/crape1.jpg' width={400} height={340} data-aos="zoom-in"/>
         </div>
         <div className={styles.mt5}></div>
         </Grid>
 
         <Grid item xs={12} sm={12} md={6}>
         <div align="center">
-        <Image src='/crape2.jpg' width={400} height={340} />
+        <Image src='/crape2.jpg' width={400} height={340} data-aos="zoom-in"/>
         </div>
         </Grid>
 

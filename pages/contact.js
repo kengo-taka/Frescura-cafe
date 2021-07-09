@@ -1,6 +1,10 @@
 import Button from '@material-ui/core/Button'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import Aos from "aos";
+import "aos/dist/aos.css"
+import React, { useEffect } from 'react';
+
 
 const Contact = () => {
   return (

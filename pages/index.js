@@ -6,9 +6,16 @@ import Button from '@material-ui/core/Button'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import React, { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 export default function Home() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   // title animation
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -40,10 +47,10 @@ export default function Home() {
      
       <div className={styles.parent}>
         <img src='coffeeHome.jpg' className={styles.topImage}></img>
-        <div className={styles.animate}>
+        {/* <div className={styles.animate}>
           <span>H</span><span>o</span><span>l</span><span>a</span> &nbsp;
 			<span>A</span><span>m</span><span>i</span><span>g</span><span>o</span><span>s</span><span>!</span>
-        </div>
+        </div> */}
       </div>
       <div className={styles.con}>
 
@@ -55,7 +62,7 @@ export default function Home() {
         <Grid container>
           <Grid item item xs={12} sm={12} md={6}>
             <div align="center" >
-              <Image src='/crape1.jpg' width={250} height={220} />
+              <Image src='/crape1.jpg' width={250} height={220} data-aos="fade-up"/>
             </div>
           </Grid>
           <Grid item item xs={12} sm={12} md={6}>
@@ -76,7 +83,7 @@ export default function Home() {
           <Grid container >
             <Grid item item xs={12} sm={12} md={6}>
               <div align="center" >
-                <Image src='/crape2.jpg' width={250} height={220} />
+                <Image src='/crape2.jpg' width={250} height={220} data-aos="fade-up"/>
               </div>
             </Grid>
             <Grid item item xs={12} sm={12} md={6}>
@@ -112,7 +119,7 @@ export default function Home() {
             </Grid>
             <Grid item item xs={12} sm={12} md={6}>
               <div align="center" >
-                <Image src='/crape2.jpg' width={250} height={220} />
+                <Image src='/crape2.jpg' width={250} height={220} data-aos="fade-up"/>
               </div>
             </Grid>
           </Grid>
@@ -123,7 +130,7 @@ export default function Home() {
         <Grid container>
           <Grid item item xs={12} sm={12} md={6}>
             <div align="center" >
-              <Image src='/crape3.jpg' width={250} height={220} />
+              <Image src='/crape3.jpg' width={250} height={220} data-aos="fade-up"/>
             </div>
           </Grid>
           <Grid item item xs={12} sm={12} md={6}>

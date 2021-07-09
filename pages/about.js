@@ -1,7 +1,16 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import Aos from "aos";
+import "aos/dist/aos.css"
+import React, { useEffect } from 'react';
+
 
 const About = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+  
   return (
     <div className={styles.con}>
       <h1 align="center" className={styles.aboutTitle}>Sobre nosotros</h1>
@@ -11,7 +20,7 @@ const About = () => {
       </div>
      <div className={styles.mt10}></div>
      <div align="center" className={styles.chef}>
-     <Image src='/chef.png' width={300} height={300} />
+     <Image src='/chef.png' width={300} height={300} data-aos="zoom-in"/>
      </div>
      <div className={styles.mt10}></div>
      <h1 align="center" className={styles.textChef}>Head chef</h1>
