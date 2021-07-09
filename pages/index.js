@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </Grid>
           <Grid item item xs={12} sm={12} md={6}>
-            <div align="center">
+            <div align="center" data-aos="fade-up">
               <h1 className={styles.homeText1}>Sobre</h1>
               <div className={styles.mt5}></div>
               <h3 className={styles.homeText2}>En nuestra instalación tenemos el placer de ofrecerte Crepería, Pizzería y Cafetería. Tendras la oportunidad de probar nuestras ricas Crepas con el toque Francés y nuestras Pizzas con el toque Italiano. </h3>
@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </Grid>
             <Grid item item xs={12} sm={12} md={6}>
-              <div align="center">
+              <div align="center" data-aos="fade-up">
                 <h1 className={styles.homeText1}>Menú</h1>
                 <div className={styles.mt5}></div>
                 <h3 className={styles.homeText2}>CHICKEN BURGER $99</h3>
@@ -105,7 +105,7 @@ export default function Home() {
         <div className={styles.gridForBig}>
           <Grid container>
             <Grid item item xs={12} sm={12} md={6}>
-              <div align="center">
+              <div align="center" data-aos="fade-up">
                 <h1 className={styles.homeText1}>Menú</h1>
                 <div className={styles.mt5}></div>
                 <h3 className={styles.homeText2}>CHICKEN BURGER $99</h3>
@@ -134,7 +134,7 @@ export default function Home() {
             </div>
           </Grid>
           <Grid item item xs={12} sm={12} md={6}>
-            <div align="center">
+            <div align="center" data-aos="fade-up">
               <h1 className={styles.homeText1}>Contacto</h1>
               <div className={styles.mt5}></div>
               <h3 className={styles.homeText2}>Estamos acá para resolver cualquier duda que tengas. ¡Ponte en contacto con nosotros¡
