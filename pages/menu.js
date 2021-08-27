@@ -23,7 +23,7 @@ const Menu = () => {
       <h2 className={styles.menuText1}>BEBIDAS</h2>
 
       <Grid container>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
 
           <h3 className={styles.menuText2}>FRAPPES</h3>
           <div className={styles.menuText3}>
@@ -42,7 +42,7 @@ const Menu = () => {
             <h4>Ferrero $56</h4>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h3 className={styles.menuText2}>MALTEADAS</h3>
           <div className={styles.menuText3}>
             <h4>Fresa $25</h4>
@@ -59,7 +59,7 @@ const Menu = () => {
             <h4>Agua mineral Perrier (330ml) $30</h4>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h2 className={styles.menuText2}>CALIENTES</h2>
           <div className={styles.menuText3}>
             <h4>Americano (café Premium) $39</h4>
@@ -72,7 +72,7 @@ const Menu = () => {
             <h4>Tisana $39</h4>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
         <h3 className={styles.menuText2}>CERVEZAS</h3>
           <div className={styles.menuText3}>
             <h4>Corona $29</h4>
@@ -88,7 +88,7 @@ const Menu = () => {
       <h2 className={styles.menuText1}>HAMBURGUESAS</h2>
 
       <Grid container>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h3 className={styles.menuText4}>CHICKEN BURGER $99</h3>
           <h4 className={styles.menuText3}>Deliciosa pechuga de pollo, jamon, queso americano, queso chihuahua y verdura</h4>
 
@@ -115,7 +115,7 @@ const Menu = () => {
       <h2 className={styles.menuText1}>DESAYUNOS</h2>
 
       <Grid container>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h3 className={styles.menuText4}>CHILAQUILES $99</h3>
           <h4 className={styles.menuText3}>Rojos o verdes, acompañados de huevos estrellados y frijoles<br></br>Con pollo + $15</h4>
 
@@ -142,7 +142,7 @@ const Menu = () => {
       <p className={styles.menuText3}>Chica: 30cm - Grande: 40cm</p>
 
       <Grid container>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h3 className={styles.menuText4}>Pepperoni y champiñones</h3>
           <p className={styles.menuText3}>Chica $99, Grande $144</p>
           <h3 className={styles.menuText4}>Hawaiana</h3>
@@ -165,7 +165,7 @@ const Menu = () => {
           <p className={styles.menuText3}>Chica $129, Grande $199</p>
           <h4 className={styles.menuText3}>(fajitas de pollo, tocino, champiñones, jitomate y nuestra famosa salsa Chipocrema)</h4>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h3 className={styles.menuText4}>Prime</h3>
           <p className={styles.menuText3}>Chica $149, Grande $219</p>
           <h4 className={styles.menuText3}>(champiñones, pimiento, jitomate, pepperoni, cebolla morada, aceitunas, salchicha, jamón y tocino) </h4>
@@ -207,7 +207,7 @@ const Menu = () => {
 
       <h2 className={styles.menuText1}>CREPAS</h2>
       <Grid container>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h2 className={styles.menuText2}>DULCES</h2>
           <p className={styles.menuText3}>(1 o 2 ingredientes a elegir) $59</p>
           <p className={styles.menuText3}>*Ingrediente extra: $10</p>
@@ -225,7 +225,7 @@ const Menu = () => {
           <h3>Mermelada de fresa o zarzamora</h3>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} data-aos="flip-left">
+        <Grid item xs={12} sm={12} md={6}>
           <h2 className={styles.menuText2}>SALADAS</h2>
           <p className={styles.menuText3}>Queso mas 1 ingrediente a elegir) $65</p>
           <p className={styles.menuText3}>*Ingrediente extra: $15</p>
